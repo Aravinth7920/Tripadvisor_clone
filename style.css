@@ -1,0 +1,1358 @@
+body {
+    margin: 6px;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 20%;
+    position: sticky;
+
+}
+
+.heading_tittle {
+    height: 10vh;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    margin-left: 50px;
+
+}
+
+.heading_tittle button:hover {
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+
+}
+
+.btn {
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.login {
+    margin-left: 120px;
+    height: 10vh;
+    width: 10%;
+    margin-top: 20px;
+    display: block;
+}
+
+.login_btn {
+    margin-left: 50px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    font-size: 25px;
+}
+
+.login_btn:hover {
+    background-color: rgb(221, 210, 195);
+    transition: 0.5s;
+}
+
+.sign {
+    margin-right: 60px;
+    width: 10%;
+}
+
+.signin_btn {
+    padding: 15px;
+    color: white;
+    background-color: black;
+    margin-left: 50px;
+    border-radius: 30px;
+    border: none;
+}
+
+.signin_btn:hover {
+    background-color: rgb(37, 36, 36);
+    color: rgb(187, 178, 167);
+}
+
+.main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.where_to {
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.container_section {
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.container_btn {
+    border: none;
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.searchall {
+    border-bottom: solid 2px black;
+}
+
+.container_btn span:hover {
+    border-bottom: solid 2px black;
+}
+
+.searchbar {
+    height: 8vh;
+    width: 60%;
+    text-align: center;
+    padding: 5px;
+    border: solid 1px rgb(88, 83, 83);
+    border-radius: 30px;
+    margin-left: 250px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.searchbar input {
+    width: 650px;
+    text-align: start;
+    /* margin-top: 5px; */
+    height: 30px;
+    border: none;
+    margin-left: 50px;
+    margin-top: 10px;
+    /* justify-content: space-evenly; */
+    outline: none;
+    align-items: center;
+
+}
+
+.searchbar i {
+    position: absolute;
+    /* 280px;left */
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+
+.search_btn {
+    border-radius: 20px;
+    background-color: rgb(95, 185, 140);
+    /* padding: 20px; */
+    border: none;
+    /* padding-right: 25px; */
+    margin-right: 20px;
+    text-align: center;
+    width: 15%;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.adventures {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.adventures h2,
+span {
+    margin-left: 30px;
+}
+
+.list {
+    display: flex;
+    /* flex: 3; */
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+/* .list{
+    -ms-overflow-style:none ;
+     scrollbar-width: none;
+} */
+.adventure-item {
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 1px;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+
+}
+
+.adventure-item img {
+    border-radius: 20px;
+    height: 200px;
+    width: 80%;
+    margin: 1px;
+
+
+}
+
+.overlay {
+    position: absolute;
+    bottom: 1px;
+    left: 15px;
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.adventure_sub {
+    display: flex;
+    flex-basis: 20%;
+
+}
+
+.adventure-item2 {
+    height: 300px;
+    flex-grow: 1;
+    flex-basis: 40%;
+    font-size: 15px;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.adventure-item2 img {
+    border-radius: 10px;
+    height: 250px;
+    width: 80%;
+    margin: 5px;
+    /* display: block; */
+}
+
+.adventure-item2 p {
+    width: 100%;
+    height: 60px;
+    flex-grow: 1;
+    flex-basis: 30%;
+    font-weight: bolder;
+
+}
+
+.icon_btn {
+    position: absolute;
+    top: 20px;
+    right: 6cqi;
+    height: 40px;
+    width: 40px;
+    color: black;
+    background-color: white;
+    border: none;
+
+
+    border-radius: 50px;
+
+    align-items: center;
+    gap: 8px;
+}
+
+.icon_btn i {
+    font-size: 24px;
+    /* Adjust this value to increase icon size */
+    margin-right: 5px;
+    position: relative;
+    align-items: center;
+
+}
+
+.icon_btn:hover {
+    background-color: #0056b3;
+}
+
+.top_experience h2,
+span {
+    margin-left: 30px;
+}
+
+.top_experience {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    height: 520px;
+}
+
+
+.top_experience3 {
+
+    height: 60vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.adventure_sub3 {
+    display: flex;
+    flex-basis: 20%;
+    flex-shrink: 1;
+
+}
+
+.adventure-item3 {
+    height: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.adventure-item3 img {
+    border-radius: 10px;
+    height: 250px;
+    width: 80%;
+    margin: 5px;
+    display: block;
+
+
+}
+
+.adventure-item3 p {
+    font-weight: bold;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+.space {
+    height: 15vh;
+    width: 100%;
+
+}
+.more_expolre_main{
+    height: 65vh;
+    margin: 5px;
+}
+.more_expolre {
+    height: 65vh;
+    flex-grow: 1;
+    flex-basis: 70%;
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+   padding: 0;
+    /* margin: 0px 0px 0px 0px; */
+}
+.more_expolre h2{
+    height: 20px;
+    
+}
+
+.more_explore_sub{
+    height: 350px;
+    width: 90%;
+    bottom: 40px;
+   
+
+
+}
+
+.explore_images {
+
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 20%;
+    width: 100%;
+    height: 330px;
+}
+
+.explore_span {
+    display: flex;
+    justify-content: space-evenly;
+    width: 110%;
+    left: 10px;
+    margin: 0;
+    align-items: start;
+    /* padding: 10px;  */
+    margin-left: 40px;
+    text-align: center;
+    margin: 10px;
+}
+.first_span{
+   left: 40px;
+}
+
+.explore_card {
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.exlore {
+    height: 300px;
+    width: 380px;
+}
+
+.explore_span span {
+    /* margin-right: 60%; */
+    display: contents;
+    font-weight: bolder;
+    margin: 0;
+
+}
+
+.more_explore_sub_div {
+    margin-right: 20px;
+    font-size: 18px;
+
+
+}
+
+.home_rentals h2 {
+    margin-top: 70px;
+
+    padding-left: 30px;
+
+}
+
+.home_rentals_flex {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.home_rentals_sub {
+    width: 10%;
+    padding: 60px;
+    margin-left: 60px;
+
+}
+
+.home_rentals_flex_img {
+    width: 250px;
+    height: 60%;
+    padding: 20px;
+}
+
+.wanderer {
+    width: 80%;
+    height: 100vh;
+    margin: 40px;
+    background-color: rgb(118, 177, 233);
+    display: flex;
+    margin-left: 140px;
+}
+
+.wander_div {
+    display: flex;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 190px;
+
+}
+
+.sponser {
+    font-size: 20px;
+}
+
+.wander_head h2 {
+    margin-left: 60px;
+    font-size: 35px;
+}
+
+.wander_sub_div {
+    text-align: center;
+}
+
+.wander_btn {
+    margin-left: 150px;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.travellers_choice_award {
+    background-color: rgb(226, 192, 148);
+    height: 100vh;
+
+}
+
+.travellers_choice_1 {
+    display: flex;
+    margin-left: 180px;
+
+}
+
+.traveller_btn {
+    margin-left: 120px;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.travellers_choice_left img {
+    margin-top: 120px;
+    margin-left: 20px;
+
+}
+
+.travellers_choice_left span {
+    margin-left: 5px;
+}
+
+.travellers_choice_left h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.travellers_choice_right {
+    margin-left: 150px;
+    margin-top: 100px;
+
+}
+
+.travellers_choice_right img {
+    width: 300px;
+    height: 360px;
+}
+
+.gap_div {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+}
+
+.footer {
+
+    height: 80vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.footer_top {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+
+.footer_left {
+    width: 60%;
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+
+.footer_right {
+    width: 40%;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.sites {
+    margin-top: 40px;
+    height: 40vh;
+}
+
+.footer_btn {
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.copyright_logo {
+    width: 50%;
+
+}
+
+.payment {
+    margin-left: 80px;
+    width: 50%;
+
+}
+
+.footer_paragraph {
+    font-size: 15px;
+}
+
+.online_nw i {
+    height: 30px;
+    width: 150px;
+    justify-content: space-evenly;
+    text-align: end;
+}
+
+.fa-brands fa-instagram {
+    height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .body {}
+
+    .header {
+        width: 100%;
+        height: 10%;
+        font-size: 10px;
+    }
+
+    .heading_tittle {
+        display: none;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .sign {
+        margin-left: 180px;
+        text-size-adjust: 10px;
+
+    }
+
+    .signin_btn {
+        border-radius: 20px;
+        height: 30px;
+        width: 70px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .container_section {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        overflow-x: scroll;
+    }
+
+    .container_section::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container_btn {
+        font-size: small;
+    }
+
+    .searchbar {
+        width: 90%;
+        height: 120px;
+        margin: 30px;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .search_input {
+        width: 100px;
+        height: 5px;
+        display: none;
+        border-top: solid 1px rgb(100, 32, 32);
+        background-color: aqua;
+
+    }
+
+    .search_btn {
+        margin-top: 60px;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .home_img img {
+        margin: 20px;
+        margin-right: 90px;
+        height: 270px;
+        width: 100%;
+    }
+    .adventure-item p{
+        display: none;
+
+    }
+    .adventure-item{
+        height: 10%;
+    }
+
+    .adventure_sub {
+        font-size: smaller;
+    }
+
+    .adventure-item2 {
+        height: 5%;
+    }
+
+    .adventures {
+        height: 10%;
+        width: 100%;
+        font-size: smaller;
+    }
+.top_experience{
+    height: 320px;
+}
+    .top_experience,
+    p {
+        font-size: x-small;
+        margin: 0;
+        padding: 0;
+    }
+
+    .list {
+        width: 100%;
+        margin: 0;
+        height: 200px;
+    }
+
+    .list img {
+
+        
+
+    }
+
+    .list button {
+        display: none;
+    }
+
+    .top_experience3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .more_expolre {
+        font-size: small;
+        height: 250px;
+    }
+
+    .explore_images img {
+        height: 70px;
+        width: 90%;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+    }
+
+    .explore_span {
+        font-size: smaller;
+        display: none;
+    }
+
+    .home_rentals h2 {
+        padding: 0;
+        margin: 0;
+        font-size: medium;
+    }
+
+    .home_rentals h3 {
+        display: none;
+
+    }
+    .home_rentals_sub{
+        display: none;
+    }
+
+    .home_rentals_flex_img{
+        width: 10px;
+        height: 40px;
+        justify-content: space-around;
+    }
+
+    .wanderer {
+        display: none;
+    }
+
+    .travellers_choice_award {
+        height: 450px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_left h2,
+    span {
+        font-size: smaller;
+
+        padding: left 10px;
+        ;
+    }
+
+    .travellers_choice_right {
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_right img {
+        margin: 10%;
+    }
+
+    .footer {
+        height: 400px;
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .do_business,
+    .explore,
+    .sites,
+    .footer_paragraph,
+    .online_nw {
+        display: none;
+    }
+
+    .footer_btn {
+        margin-right: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .body {}
+
+    .header {
+        width: 100%;
+        height: 10%;
+        font-size: 10px;
+    }
+
+    .heading_tittle {
+        display: none;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .sign {
+        margin-left: 180px;
+        text-size-adjust: 10px;
+
+    }
+
+    .signin_btn {
+        border-radius: 20px;
+        height: 30px;
+        width: 70px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .container_section {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        overflow-x: scroll;
+        font-size: medium;
+    }
+    .container_section::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container_btn {
+        font-size: small;
+    }
+
+    .searchbar {
+        width: 90%;
+        height: 120px;
+        margin: 30px;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .search_input {
+        width: 100px;
+        height: 5px;
+        display: none;
+        border-top: solid 1px rgb(100, 32, 32);
+        background-color: aqua;
+
+    }
+
+    .search_btn {
+        margin-top: 60px;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .home_img img {
+        margin: 20px;
+        margin-right: 90px;
+        height: 270px;
+        width: 100%;
+    }
+    .overlay{
+        display: none;
+    }
+    .adventure_sub {
+        font-size: medium;
+        height: 10px;
+    }
+    .adventure-item{
+        height: 10px;
+    }
+    #adventure_id{
+        height: 120px;
+        margin: 10px;
+    }
+  
+    .adventure-item2_id{
+        height: 50px;
+        background-color: aqua;
+    }
+    .Chennai_id{
+      
+        height: 120px;
+    }
+    .adventures {
+        height: 5%;
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .top_experience,
+    p {
+        font-size: smaller;
+    }
+    .top_experience{
+        height: 350px;
+    }
+    .list {
+        width: 100%;
+        margin: 0;
+        height: 250px;
+    }
+
+    .list img {
+
+        height: 120px;
+
+    }
+
+    .list button {
+        display: none;
+    }
+
+    .top_experience3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .space {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .more_expolre {
+        margin: 0;
+        height: 60vh;
+        
+    }
+    .more_expolre h2{
+        margin-top: 30px;
+    }
+  .more_explore_sub{
+    height: 50vh;
+    margin-bottom: 100px;
+    margin: 0;
+    padding: 0;
+  }
+    .explore_images img {
+        height: 140px;
+        width: 120%;
+        justify-content: space-between;
+       
+    }
+
+    .explore_span {
+        font-size: smaller;
+        display:none;
+    }
+
+    .home_rentals h2 {
+        padding: 0;
+        margin: 0;
+        font-size: large;
+    }
+
+    .home_rentals_sub {
+        width: 0%;
+        display: none;
+    }
+
+    .home_rentals h3 {
+        display: none;
+
+    }
+
+    .home_rentals_flex img {
+        width: 90%;
+        height: 120px;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .wanderer {
+        display: none;
+    }
+
+    .travellers_choice_award {
+        height: 450px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_left h2,
+    span {
+        font-size: smaller;
+
+        padding: left 10px;
+        ;
+    }
+
+    .travellers_choice_right {
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_right img {
+        margin: 10%;
+        height: 50%;
+        width: 50%;
+    }
+
+    .footer {
+        height: 400px;
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .do_business,
+    .explore,
+    .sites,
+    .footer_paragraph,
+    .online_nw {
+        display: none;
+    }
+
+    .footer_btn {
+        margin-right: 100%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .body {}
+
+    .header {
+        width: 100%;
+        height: 10%;
+        font-size: 10px;
+    }
+
+    .heading_tittle {
+        display: none;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .sign {
+        margin-left: 180px;
+        text-size-adjust: 10px;
+
+    }
+
+    .signin_btn {
+        border-radius: 20px;
+        height: 30px;
+        width: 70px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .container_section {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        overflow-x: scroll;
+        font-size: medium;
+    }
+    .container_section::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container_btn {
+        font-size: small;
+    }
+
+    .searchbar {
+        width: 90%;
+        height: 120px;
+        margin: 30px;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .search_input {
+        width: 100px;
+        height: 5px;
+        display: none;
+        border-top: solid 1px rgb(100, 32, 32);
+        background-color: aqua;
+
+    }
+
+    .search_btn {
+        margin-top: 60px;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .home_img img {
+        margin: 20px;
+        margin-right: 90px;
+        height: 270px;
+        width: 100%;
+    }
+    .overlay{
+        display: none;
+    }
+    .adventure_sub {
+        font-size: medium;
+        height: 10px;
+    }
+    .adventure-item{
+        height: 10px;
+    }
+    #adventure_id{
+        height: 120px;
+        margin: 10px;
+    }
+  
+    .adventure-item2_id{
+        height: 50px;
+        background-color: aqua;
+    }
+    .Chennai_id{
+      
+        height: 120px;
+    }
+    .adventures {
+        height: 5%;
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .top_experience,
+    p {
+        font-size: smaller;
+    }
+    .top_experience{
+        height: 350px;
+    }
+    .list {
+        width: 100%;
+        margin: 0;
+        height: 250px;
+    }
+
+    .list img {
+
+        height: 120px;
+
+    }
+
+    .list button {
+        display: none;
+    }
+
+    .top_experience3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .space {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .more_expolre {
+        margin: 0;
+        height: 60vh;
+        
+    }
+    .more_expolre h2{
+        margin-top: 30px;
+    }
+  .more_explore_sub{
+    height: 50vh;
+    margin-bottom: 100px;
+    margin: 0;
+    padding: 0;
+  }
+    .explore_images img {
+        height: 140px;
+        width: 120%;
+        justify-content: space-between;
+       
+    }
+
+    .explore_span {
+        font-size: smaller;
+        display:none;
+    }
+
+    .home_rentals h2 {
+        padding: 0;
+        margin: 0;
+        font-size: large;
+    }
+
+    .home_rentals_sub {
+        width: 0%;
+        display: none;
+    }
+
+    .home_rentals h3 {
+        display: none;
+
+    }
+
+    .home_rentals_flex img {
+        width: 90%;
+        height: 120px;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .wanderer {
+        display: none;
+    }
+
+    .travellers_choice_award {
+        height: 450px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_left h2,
+    span {
+        font-size: smaller;
+
+        padding: left 10px;
+        ;
+    }
+
+    .travellers_choice_right {
+        margin: 0;
+        padding: 0;
+    }
+
+    .travellers_choice_right img {
+        margin: 10%;
+        height: 50%;
+        width: 50%;
+    }
+
+    .footer {
+        height: 400px;
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .do_business,
+    .explore,
+    .sites,
+    .footer_paragraph,
+    .online_nw {
+        display: none;
+    }
+
+    .footer_btn {
+        margin-right: 100%;
+    }
+}
